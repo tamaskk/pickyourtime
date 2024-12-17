@@ -1,0 +1,44 @@
+# Root-level ignores
+node_modules/
+dist/
+*.log
+*.lock
+yarn.lock
+package-lock.json
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+# Ignore editor/project-specific files
+.vscode/
+.idea/
+*.iml
+
+# Shared TypeScript cache and build artifacts
+*.tsbuildinfo
+
+# Client project ignores
+apps/client/.next/
+apps/client/node_modules/
+apps/client/out/
+apps/client/.env
+apps/client/.env.local
+apps/client/.env.*.local
+apps/client/.DS_Store
+
+# Admin project ignores
+apps/admin/.next/
+apps/admin/node_modules/
+apps/admin/out/
+apps/admin/.env
+apps/admin/.env.local
+apps/admin/.env.*.local
+apps/admin/.DS_Store
+
+# Optional: Ignore any testing artifacts
+coverage/
+.nyc_output/
+*.spec.ts
+*.test.ts
+junit.xml
